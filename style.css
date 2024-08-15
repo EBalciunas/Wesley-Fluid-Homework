@@ -27,22 +27,6 @@ body {
   align-items: center;
 }
 
-.button-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.button-text p {
-  font-size: 10px;
-  color: rgb(93, 89, 89);
-}
-
-.fixed-button-logo {
-  width: 20px;
-  height: 20px;
-}
-
 .page-wrapper {
   background-color: hsl(40deg 80.51% 84.75%);
 }
@@ -74,6 +58,75 @@ header {
   align-items: center;
   grid-template-columns: 2fr 1fr;
   padding-bottom: 8rem;
+}
+
+.friends-feedback {
+  height: 90vh;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/035/654/341/original/4k-looped-animation-wave-animated-background-illustration-green-colors-modern-colorful-wallpaper-free-video.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.friends-feedback {
+  font-size: 2.5rem;
+}
+
+.feedbacker-name {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.feedback {
+  margin: 0 16rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.change-feedback-button {
+  display: flex;
+  gap: 1rem;
+}
+
+.change-feedback-button button {
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  background-color: rgb(103, 101, 101);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+  padding-bottom: 4px;
+}
+
+.change-feedback-button button:hover {
+  background-color: rgb(1, 1, 1);
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.button-text p {
+  font-size: 10px;
+  color: rgb(93, 89, 89);
+}
+
+.fixed-button-logo {
+  width: 20px;
+  height: 20px;
 }
 
 .shop-item-list {
@@ -384,5 +437,24 @@ hr {
 
   .shop-item-list {
     min-height: 100%;
+  }
+
+  .friends-feedback {
+    height: 70vh;
+  }
+
+  .friends-feedback h1 {
+    font-size: 35px;
+  }
+
+  .feedback {
+    font-size: 22px;
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .friends-feedback img {
+    height: 8rem;
+    width: 8rem;
   }
 }

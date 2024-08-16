@@ -74,6 +74,150 @@ header {
   gap: 1rem;
 }
 
+footer {
+  min-height: 100vh;
+  padding: 3rem 3rem;
+  background-color: hsl(40deg 80.51% 84.75%);
+}
+
+.footer-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.contact-name-1 {
+  font-size: 25px;
+  padding-top: 4rem;
+}
+
+footer h1 {
+  font-size: 4rem;
+}
+
+footer h1 a {
+  color: rgb(1, 1, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(1, 1, 1);
+}
+
+.footer-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer-images img {
+  border-radius: 40px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.footer-first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-first-section p {
+  font-size: 20px;
+}
+
+.concact-name-1 {
+  grid-area: 1 / 1 / 2 / 3;
+  font-size: 40px;
+}
+.footer-four-right-section-2 {
+  grid-area: 1 / 4 / 2 / 6;
+  padding-top: 4rem;
+  font-size: 18px;
+}
+
+.footer-four-right-section-2 p {
+  padding-bottom: 2rem;
+  font-size: 18px;
+}
+
+.footer-four-right-section-2 form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-second-left-section-icons-3 {
+  grid-area: 2 / 1 / 3 / 3;
+  height: 30px;
+  width: 30px;
+  display: flex;
+}
+
+.footer-second-left-section-icons-3 img {
+  height: 30px;
+  width: 30px;
+}
+
+.footer-third-middle-section-4 {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1.3rem;
+}
+
+.footer-third-middle-section-4 a {
+  text-align: left;
+  font-size: 18px;
+  color: rgb(1, 1, 1);
+}
+
+.footer-made-with-5 {
+  grid-area: 2 / 1 / 4 / 3;
+  font-size: 18px;
+  padding-top: 4rem;
+}
+
+.footer-made-with-5 a {
+  color: rgb(1, 1, 1);
+}
+
+.sign-up-input-6 {
+  grid-area: 2 / 4 / 4 / 6;
+  gap: 0.3rem;
+  padding-top: 1rem;
+}
+
+.sign-up-input-6 input {
+  padding: 1rem;
+  border: 1px solid rgb(237, 237, 237);
+  font-size: 16px;
+  font-weight: 100;
+  width: 270px;
+  height: 60px;
+}
+
+.footer-btn {
+  grid-area: 3 / 4 / 4 / 6;
+  padding: 1rem 1.8rem;
+  background-color: hsl(40deg 80.51% 84.75%);
+  border: 2px solid rgb(1, 1, 1);
+  border-radius: 8px;
+  color: rgb(1, 1, 1);
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 18px;
+}
+
+.footer-btn:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+  transition: 0.4s;
+}
+
 .friends-feedback {
   font-size: 2.5rem;
 }
@@ -456,5 +600,67 @@ hr {
   .friends-feedback img {
     height: 8rem;
     width: 8rem;
+  }
+
+  .footer-first-section h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .footer-images {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footer-images img {
+    height: 150px;
+  }
+
+  .footer-btn {
+    height: 60px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .concact-name-1 {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 30px;
+  }
+
+  .footer-four-right-section-2 {
+    grid-area: 2 / 1 / 4 / 5;
+    padding-top: 7rem;
+    font-size: 18px;
+  }
+
+  .footer-second-left-section-icons-3 {
+    grid-area: 1 / 4 / 2 / 6;
+    height: 30px;
+    width: 30px;
+    padding-top: 4.5rem;
+    padding-left: 6rem;
+  }
+  .footer-third-middle-section-4 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .footer-made-with-5 {
+    grid-area: 2 / 4 / 3 / 6;
+    font-size: 18px;
+    padding-top: 3rem;
+  }
+  .sign-up-input-6 {
+    grid-area: 3 / 1 / 4 / 12;
+    display: flex;
+    gap: 0.3rem;
+    padding-top: 2rem;
+  }
+
+  .sign-up-input-6 input {
+    display: flex;
   }
 }

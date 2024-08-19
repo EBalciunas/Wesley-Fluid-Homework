@@ -72,6 +72,11 @@ header {
   gap: 1rem;
 }
 
+.welcome-section {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
 .welcome-message {
   padding-top: 4rem;
   display: grid;
@@ -81,12 +86,13 @@ header {
 }
 
 .friends-feedback {
-  height: 90vh;
+  padding: 8rem 3rem;
+  /* height: 100%;
+  max-height: 90vh; */
   background-image: url(https://static.vecteezy.com/system/resources/thumbnails/035/654/341/original/4k-looped-animation-wave-animated-background-illustration-green-colors-modern-colorful-wallpaper-free-video.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,7 +404,6 @@ hr {
   display: block;
   object-fit: cover;
   margin-right: 4rem;
-  margin-bottom: 10rem;
 }
 
 .second-image img {
@@ -469,8 +474,7 @@ hr {
 
 .third-shop-list-image,
 .third-shop-list-name,
-.third-shop-list-price,
-.third-shop-list-button {
+.third-shop-list-price {
   display: block;
 }
 
@@ -483,6 +487,24 @@ hr {
   width: 180px;
   background-color: var(--second-background-color);
   cursor: pointer;
+}
+
+.first-shop-list-button:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+  transition: 0.4s;
+}
+
+.second-shop-list-button:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+  transition: 0.4s;
+}
+
+.third-shop-list-button:hover {
+  background-color: rgb(1, 1, 1);
+  color: white;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -687,7 +709,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+@media only screen and (max-width: 1024px) and (min-height: 1366px) {
   main {
     padding: 1rem;
     height: auto;

@@ -4,12 +4,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: hsl(40deg 80.51% 84.75%);
+  --second-background-color: hsla(265.45454545, 73.33333333%, 91.17647059%, 1);
+}
+
 body {
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  visibility: hidden;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .fixed-button {
@@ -28,7 +48,7 @@ body {
 }
 
 .page-wrapper {
-  background-color: hsl(40deg 80.51% 84.75%);
+  background-color: var(--background-color);
 }
 
 main {
@@ -75,9 +95,9 @@ header {
 }
 
 footer {
-  min-height: 100vh;
+  min-height: auto;
   padding: 3rem 3rem;
-  background-color: hsl(40deg 80.51% 84.75%);
+  background-color: var(--background-color);
 }
 
 .footer-content-wrapper {
@@ -114,7 +134,7 @@ footer h1 a {
 .footer-images img {
   border-radius: 40px;
   height: 300px;
-  width: 300px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -344,7 +364,7 @@ hr {
   border: none;
 }
 
-.heading-section-img {
+.heading img {
   object-fit: cover;
   border-radius: 4rem;
   height: 580px;
@@ -461,7 +481,7 @@ hr {
   color: rgb(1, 1, 1);
   height: 50px;
   width: 180px;
-  background-color: hsla(265.45454545, 73.33333333%, 91.17647059%, 1);
+  background-color: var(--second-background-color);
   cursor: pointer;
 }
 
@@ -487,6 +507,7 @@ hr {
     justify-content: center;
     align-items: center;
     margin-left: 5.5rem;
+    font-weight: 400;
   }
 
   hr {
@@ -513,6 +534,7 @@ hr {
 
   .welcome-message h1 {
     font-size: 45px;
+    font-weight: 380;
   }
 
   .welcome-message p,
@@ -662,5 +684,105 @@ hr {
 
   .sign-up-input-6 input {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+  main {
+    padding: 1rem;
+    height: auto;
+    overflow: hidden;
+  }
+
+  header {
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding-top: 2rem;
+    padding-left: 11.5rem;
+  }
+
+  .first-list-navigation {
+    display: none;
+  }
+
+  .burger-btn-img {
+    padding-top: 2rem;
+    display: block;
+  }
+
+  header nav ul li a {
+    padding-top: 2rem;
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  .heading h1 {
+    font-size: 75px;
+    padding-bottom: 1rem;
+  }
+
+  .heading img {
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .welcome-message {
+    padding-top: 4rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 2fr;
+    padding-bottom: 10rem;
+  }
+
+  .welcome-message p {
+    margin-top: 5rem;
+    width: 95%;
+  }
+
+  .welcome-message h1 {
+    font-weight: 350;
+    font-size: 70px;
+  }
+
+  .welcome-message-images {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .first-image img {
+    padding-top: 3rem;
+    height: 600px;
+    width: 300px;
+  }
+
+  .shop-item-list {
+    min-height: 100%;
+  }
+
+  .friends-feedback {
+    height: 50vh;
+  }
+
+  .footer-images img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .footer-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-height: 1366px) {
+  .footer-btn {
+    margin-top: 1rem;
   }
 }
